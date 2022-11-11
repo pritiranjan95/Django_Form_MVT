@@ -1,0 +1,20 @@
+<html> 
+    <head>
+        <p>Hi this is acctulay inside the template folder</p>
+        <p>The one who know abuut it all is abou to leave te station</p>
+    </head>
+    <body>
+        <div>Hi my name is {{Name}} and my age is {{age}}</div>
+        {%for i in skill%}
+        <div>{{i}}</div>
+        {%endfor%}
+
+        {% for elements in age.no %}
+    
+            {% if elements > 25 %}
+                <div>{{elements}}</div>
+            {% endif %}
+            
+        {% endfor %}
+    </body>
+</html>
